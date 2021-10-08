@@ -136,8 +136,9 @@ GameObject:
   - component: {fileID: 324035674}
   - component: {fileID: 324035673}
   - component: {fileID: 324035672}
+  - component: {fileID: 324035677}
   m_Layer: 0
-  m_Name: Diamond
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,7 +155,15 @@ Animation:
   serializedVersion: 3
   m_Animation: {fileID: 0}
   m_Animations:
+  - {fileID: 0}
   - {fileID: 7400000, guid: 73a10d1279d2d3d4b8f4d557d029df85, type: 2}
+  - {fileID: 7400000, guid: ecccb1d6b1591b741980430256d19434, type: 2}
+  - {fileID: 7400000, guid: dca5f7e91ca23da49b250e3397807f5c, type: 2}
+  - {fileID: 7400000, guid: cae8af319bf32194890c281b614b2c52, type: 2}
+  - {fileID: 7400000, guid: 1a0f30e283dfe4542823e7a21e30f635, type: 2}
+  - {fileID: 7400000, guid: 8b4bdc379e7b3e242bc04a6024839641, type: 2}
+  - {fileID: 7400000, guid: 667a0816882a22141810672e34bb505d, type: 2}
+  - {fileID: 7400000, guid: 9c57598cda530974e85b025043e2a16f, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -234,7 +243,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 246.86488, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &324035677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324035671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d4bb640014332c4bbbc20dca66f8b70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAnimationComponent: {fileID: 324035672}
+  swipeDistance: 10
 --- !u!1 &1806773083
 GameObject:
   m_ObjectHideFlags: 0
